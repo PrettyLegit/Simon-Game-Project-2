@@ -3,6 +3,13 @@ body {
   background-color: #011f3f;
 }
 
+footer {
+  color: #fef2bf;
+  font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
+  padding: 5rem 0;
+}
+
 #level-title {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
