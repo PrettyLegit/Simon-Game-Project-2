@@ -17,6 +17,10 @@ footer {
   color: #fef2bf;
 }
 
+#content-mobile {
+  display: none;
+}
+
 .container {
   display: block;
   width: 100%;
@@ -61,4 +65,36 @@ footer {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  #content-mobile {
+    display: block;
+  }
+}
+
+.start-button {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  font-size: 3rem;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em gray;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: lightgray;
+  opacity: 90%;
+  color: gray;
+  cursor: pointer;
 }

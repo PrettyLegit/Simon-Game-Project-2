@@ -27,6 +27,15 @@ $(".btn").click(function () {
   checkAnswer(userClickPattern.length - 1);
 });
 
+$(".start-button").click(function () {
+  if (!gameStarted) {
+    $("#level-title").text("Level " + currentLevel);
+    nextSequence();
+    gameStarted = true;
+    $(".start-button").hide();
+  }
+});
+
 //Generates the next sequence
 function nextSequence() {
   let randomNumber = Math.floor(Math.random() * 4);
@@ -86,4 +95,5 @@ function startOver() {
   currentLevel = 0;
   gamePattern = [];
   gameStarted = false;
+  $(".start-button").show();
 }
